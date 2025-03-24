@@ -1,0 +1,124 @@
+@media screen and (min-width: 600px) {
+    .dropdown-container {
+        width: 20rem;
+    }
+
+    .dropdown-content {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 599px) and (min-width: 500px) {
+    .dropdown-container {
+        width: 15rem;
+    }
+
+    .dropdown-content {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .dropdown-container {
+        width: 10rem;
+    }
+
+    .dropdown-content {
+        font-size: small;
+    }
+}
+
+.dropdown-container {
+    position: relative;
+    float: right;
+    font-size: large;
+    background-color: #734656;
+    border-bottom: #FBF8E6 1px solid;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 38px;
+
+}
+
+.dropdown {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);  
+    transform: translate(-50%, -50%);   
+    width: 100%;
+}
+
+.caretDown {
+    font-size: small;
+    margin-left: 0.5rem;
+    height: 100%;
+}
+
+.closeBtn {
+    font-size: small;
+    margin-left: 0.5rem;
+    height: 100%;
+}
+
+.dropdown-content.false {
+    display: none;
+}
+
+.dropdown-content {
+    position: relative;
+    max-height: 75vh;
+    list-style: none;
+    margin-top: 39px;
+    margin-bottom: 0;
+    padding: 0;
+    overflow-y: scroll;
+    scrollbar-color: rgb(251, 248, 230, 0.5) #734656;
+    scrollbar-width: thin;
+    border-left: #FBF8E6 1px solid;
+    border-right: #FBF8E6 1px solid;
+}
+
+/* Prevent double border on dropdown */
+.dropdown-item:first-child {
+    background-color: #734656;
+    margin: auto;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-right: #FBF8E6 1px solid;
+}
+
+.dropdown-item:not(:first-child) {
+    background-color: #734656;
+    margin: auto;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-top: #FBF8E6 1px solid;
+    border-right: #FBF8E6 1px solid;
+}
+
+.dropdown-item:hover {
+    background-color: #F29544;
+}
+
+.load-more.false {
+    display: none;
+}
+
+.load-more {
+    background-color: #734656;
+    margin: auto;
+    padding: 0.1rem;
+    text-align: center;
+    border-top: #FBF8E6 1px solid;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.load-more:hover {
+    background-color: #F29544;
+}

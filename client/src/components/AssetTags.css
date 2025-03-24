@@ -1,0 +1,23 @@
+.tag-list {
+    justify-content: space-around;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+
+.tag-badge {
+    display: inline-block;
+    width: fit-content;
+    background-color: #A64E46;
+    margin: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 20px;
+
+}
+
+.tag-link {
+    text-decoration: none;
+    text-wrap: nowrap;
+    color: #FBF8E6;
+    font-size: small;
+}

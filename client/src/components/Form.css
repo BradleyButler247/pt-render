@@ -1,0 +1,267 @@
+/* General Form */
+form {
+    color: #2A2640;
+}
+
+.form-title {
+    font-size: xx-large;
+    padding-top: 1rem;
+}
+
+.form-field-container {
+    display: block;
+    padding-top: 1rem;
+}
+
+
+/* Form Labels & Inputs */
+.form-label-container {
+    display: block;
+    width: 75%;
+    margin: auto;
+    text-align: start;
+}
+
+.form-label {
+    display: block;
+    font-size: larger;
+}
+
+.form-input {
+    height: 30px;
+    width: 75%;
+}
+
+
+/* Password & Verification */
+.password-verification-input-container {
+    position: relative;
+    display: flex;
+    text-align: center;
+}
+
+.password-verification-input {
+    margin: auto;
+}
+
+.password-show {
+    position: absolute;
+    right: 14%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+/* Name */
+@media screen and (min-width: 750px) {
+    #name-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2rem;
+        width: 76%;
+        margin: auto;
+    }
+    
+    .form-label-container.name {
+        text-align: start;
+        width: 100%;
+    }
+    
+    .name-input-container {
+        text-align: start;
+    }
+    
+    .name-input {
+        width: 96%;
+    }
+    
+    #first-name-label-container {
+        grid-column: 1;
+        grid-row: 1;
+        padding-left: 2px;
+
+    }
+    
+    #first-name-input-container {
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    #last-name-container {
+        margin-top: 1rem;
+    }
+}
+
+/* Buttons */
+.password-toggle-btn {
+    color: grey;
+}
+
+.form-submit-btn {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 4rem;
+    border: 0;
+    border-radius: 20px;
+    font-size: larger;
+    background-color: #A64E46;
+    color: #FBF8E6;
+    box-shadow: #FBF8E6;
+}
+
+.form-submit-btn:hover {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 4rem;
+    border: 0;
+    border-radius: 20px;
+    font-size: larger;
+    background-color: #A64E46;
+    filter: brightness(85%);
+    color: #FBF8E6;
+    box-shadow: #FBF8E6;
+}
+
+/* Login Link */
+.form-link-container {
+    display: block;
+    padding-bottom: 1rem;
+}
+
+.form-link {
+    font-size: small;
+    color: #2A2640;
+}
+
+.form-link:active {
+    font-size: small;
+    color: #A64E46;
+}
+
+/* ******************** Profile Edit Form Specifics ******************** */
+@media screen and (min-height: 525px) {
+    #profile-edit-form-container {
+        position: relative;
+        top: 35%;
+        transform: translateY(-50%);
+    }
+}
+
+@media screen and (max-height: 524px) {
+    #profile-edit-form-container {
+        margin: auto;
+        margin-top: 1rem;
+    }
+}
+
+#cancel-btn-container {
+    position: relative;
+}
+
+#cancel-btn {
+    position: absolute;
+    top: 10px;
+    right: 12.5px;
+    border: none;
+    background-color: #FBF8E6;
+    padding: 0;
+    font-size: large;
+}
+/* ********************************************************************* */
+
+/* *********************** Trades Form Specifics *********************** */
+.txn-select-container {
+    display: flex;
+    justify-content: center;
+}
+
+.txn-select-tab {
+    text-align: center;
+    font-size: x-large;
+    width: 50%;
+    padding: 1rem;
+}
+
+.txn-select-tab.buy {
+    border-radius: 20px 0 0 0;
+    color: #2A2640;
+}
+
+.txn-select-tab.buy.active {
+    border-radius: 20px 0 0 0;
+    background-color: #17B169;
+    color: #FBF8E6;
+}
+
+.txn-select-tab.sell {
+    border-radius: 0 20px 0 0;
+    color: #2A2640;
+}
+
+.txn-select-tab.sell.active {
+    border-radius: 0 20px 0 0;
+    background-color: #C04657;
+    color: #FBF8E6;
+}
+
+.trade-form {
+    width: 100%;
+    margin: auto;
+} 
+
+.form-label-container.with-icon {
+    display: flex;
+    position: relative;
+}
+
+.asset-type-dropdown-icon-container {
+    margin: auto;
+    margin-left: 0.25rem;
+    height: 100%;
+    font-size: small;
+}
+
+.asset-type-dropdown {
+    height: 0;
+}
+
+.asset-type-dropdown.show {
+    position: absolute;
+    top: 100%;
+    left: -1%;
+    height: auto;
+    width: fit-content;
+    z-index: 1;
+    border: solid 1px #2A2640;
+    background-color: #A64E46;
+    color: #FBF8E6;
+}
+
+.asset-dropdown-item {
+    display: none;
+    text-align: start;
+}
+
+.asset-dropdown-item.show {
+    display: block;
+}
+
+.asset-dropdown-item.show:hover {
+    background-color: #F29544;
+}
+
+.trades-form-submit-btn {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 10%;
+    border: 0;
+    border-radius: 20px;
+    font-size: larger;
+    background-color: #734656;
+    color: #FBF8E6;
+    box-shadow: #FBF8E6;
+}
+/* ********************************************************************* */

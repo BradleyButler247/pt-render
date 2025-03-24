@@ -1,0 +1,16 @@
+.sort-arrow {
+    color: #734656;
+    margin-left: 0.5rem;
+}
+
+.sort-arrow.up {
+    color: #FBFBFB;
+}
+
+.sort-arrow.down {
+    color: #FBFBFB;
+}
+
+.sort-arrow:hover {
+    color:#FBFBFB;
+}

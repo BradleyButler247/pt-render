@@ -1,0 +1,39 @@
+.asset-header-container {
+    display: flex;
+    border-bottom: solid 1px #FBF8E6;
+    margin: 1rem 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.img-container {
+    height: 38px;
+    margin: 0 1rem;
+}
+
+.asset-img {
+    height: 100%;
+}
+
+.asset-title {
+    margin: 0;
+}
+
+.asset-info-container {
+    /* width: 75%; */
+}
+
+.widget-container {
+    width: 75%;
+    margin: auto;
+}
+
+.tags-container {
+    width: 75%;
+    margin: auto;
+}
+
+.asset-description {
+    text-align: justify;
+    width: 75%;
+    margin: auto;
+}

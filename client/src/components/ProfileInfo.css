@@ -1,0 +1,87 @@
+#user-info {
+    border: solid 1px #FBF8E6;
+    width: 75%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+#title-toggle-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#username-title {
+    font-size: xx-large;
+}
+
+#toggle-edit-form-btn {
+    cursor: pointer;
+    color: #734656;
+}
+
+#user-pnl-container {
+    display: flex;
+    font-size: x-large;
+}
+
+#pnl-label {
+    margin-right: 0.5rem;
+}
+
+.pnl-positive {
+    color: #17B169;
+}
+
+.pnl-negative {
+    color: #C04657;
+}
+
+#tabs-container{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+#trades-tab {
+    width: 50%;
+}
+
+#favorites-tab {
+    width: 50%;
+}
+
+.tab {
+    border-bottom: solid 2px #FBF8E6;
+    border-radius: 25px 25px 0 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.tab:hover {
+    background-color: #F29544;
+}
+
+.tab.active {
+    background-color: #734656;
+}
+
+.tab.active:hover {
+    background-color: #F29544;
+}
+
+.content.active {
+    display:block;
+}
+
+.content {
+    display: none;
+}
+
+#trades-content {
+    width: 75%;
+    margin: auto;
+    align-items: left;
+}

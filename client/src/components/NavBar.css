@@ -1,0 +1,27 @@
+#nav-container {
+    background-color: #A64E46;
+    height: 50px;
+}
+
+.navbar {
+    display: flex;
+    height: 100%;
+}
+
+#left-navbar {
+    float: left;
+}
+#right-navbar {
+    float: right;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #FBF8E6;
+    padding: 13.5px 0.75rem;
+    font-size: large;
+}
+
+.nav-item:hover {
+    background-color: #F29544;
+}

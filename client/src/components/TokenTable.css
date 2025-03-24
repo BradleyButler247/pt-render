@@ -1,0 +1,107 @@
+@media screen and (min-width: 1100px) {
+    .change {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1099px) and (min-width: 950px) {
+    .change {
+        display: none
+    }
+}
+
+@media screen and (max-width: 949px) and (min-width: 725px) {
+    .change, .volume {
+        display: none
+    }
+}
+
+@media screen and (min-width: 725px) {
+    .token-link {
+        color: #FBFBFB;
+        text-decoration: none;
+        display: flex;
+    }
+    
+    .token-name {
+        float: left;
+    }
+    
+    .token-symbol {
+        float: left;
+        margin-left: 0.5rem;
+    }
+
+    .token-col.blank-title {
+        padding-right: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 724px) {
+    .change, .volume, .mcap {
+        display: none
+    }
+
+    .token-link {
+        color: #FBFBFB;
+        text-decoration: none;
+    }
+    
+    .token-name {
+        display: block;
+    }
+    
+    .token-symbol {
+        float: left;
+        display: block;
+    }
+
+    .token-col.blank-title {
+        padding: 0.25rem;
+    }
+}
+
+.token-table {
+    min-width: fit-content;
+    width: 75%;
+    white-space: nowrap;
+}
+
+.token-col-header {
+    background-color: #A64E46;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.token-col {
+    padding: 1rem 0.5rem;
+    text-align: left;
+}
+
+.token-header-content {
+    margin: auto;
+    width: 100%;
+}
+
+.token-col-header.blank {
+    background-color: #2A2640;
+    width: 2%; 
+}
+
+.token-col.blank-title {
+    background-color: #2A2640;
+}
+
+.direction-arrow {
+    float: right;
+    text-align: right;
+}
+
+.positive {
+    color: #17B169;
+}
+
+.negative {
+    color: #C04657;
+}

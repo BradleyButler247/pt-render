@@ -1,0 +1,22 @@
+.cat-table-container {
+    margin: auto;
+    width: min-content;
+}
+
+.browse-cat-header {
+    text-align: left;
+    font-size: xx-large;
+    border-bottom: solid 1px #FBF8E6;
+}
+
+@media screen and (min-width: 500px) {
+    .browse-cat-header {
+        margin: 1rem 4rem;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .browse-cat-header {
+        margin: 1rem 4rem;
+    }
+}

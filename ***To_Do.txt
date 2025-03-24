@@ -1,0 +1,7 @@
+Encrypt local user
+Fix error handler
+Token table resize
+Category table resize
+Profile table resize
+Size loading icon
+Asset details resize

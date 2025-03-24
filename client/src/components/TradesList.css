@@ -1,0 +1,48 @@
+@media screen and (max-width: 1099px) and (min-width: 950px) {
+    .trades-list-table {
+        display: block;
+        min-width: fit-content;
+        max-width: 66%;
+        white-space: nowrap;
+    }
+}
+
+.trades-list-table {
+    display: block;
+    min-width: fit-content;
+    white-space: nowrap;
+    margin-bottom: 1rem;
+}
+
+.trades-list-table th {
+    width: 10%;
+    padding: 0.5rem;
+    background-color: #A64E46;
+}
+
+.txn-col {
+    width: 5%;
+}
+
+#date-format {
+    font-size: xx-small;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: RGB(115, 70, 86, 0.5);
+}
+tbody tr:nth-child(even) {
+    background-color: RGB(115, 70, 86);
+}
+
+.trades-list-table td {
+    padding: 1rem 0.5rem;
+}
+
+.buy-txn {
+    color: #17B169;
+}
+
+.sell-txn {
+    color: #C04657;
+}
