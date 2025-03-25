@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from "react";
-import { Alert } from "react-bootstrap";
+// import { Alert } from "react-bootstrap";
 
 const FlashMsg = ({ flashMsg, setFlashMsg }) => {
 
@@ -35,10 +35,10 @@ const FlashMsg = ({ flashMsg, setFlashMsg }) => {
     // console.log(flashMsg)
 
     return (
-
-        <Alert show={showMsg} className={`alert alert-${flashMsg.type}`}>
-            {flashMsg.text}
-        </Alert>
+        <></>
+        // <Alert show={showMsg} className={`alert alert-${flashMsg.type}`}>
+        //     {flashMsg.text}
+        // </Alert>
     )
 }
 
