@@ -5,3 +5,4 @@ Category table resize
 Profile table resize
 Size loading icon
 Asset details resize
+Flash message

@@ -8,10 +8,8 @@ export default defineConfig(({ mode }) => {
   const parentDir = path.resolve(__dirname, '../');
   dotenv.config({ path: path.join(parentDir, '.env') });
   const clientAddress = process.env.VITE_PORT
-  const serverAddress = process.env.VITE_SERVER_ADDRESS
-
-  console.log(clientAddress)
-  console.log(serverAddress)
+  const serverAddress = 'https://pt-render-server.onrender.com/'
+  // const serverAddress = process.env.VITE_SERVER_ADDRESS
 
   return ({
     define: {
