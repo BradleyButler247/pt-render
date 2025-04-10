@@ -45,8 +45,10 @@ router.post("/token", async function (req, res, next) {
  */
 
 router.post("/register", async function (req, res, next) {
+  console.log('routes/auth.js 1')
+
   try {
-    console.log('routes/auth.js')
+    console.log('routes/auth.js 2')
     const validator = jsonschema.validate(req.body.userInfo, userRegisterSchema);
     if (!validator.valid) {
       const errs = validator.errors.map(e => e.stack);
@@ -58,6 +60,7 @@ router.post("/register", async function (req, res, next) {
     return res.json({ token })
     
   } catch (err) {
+    console.log('routes/auth.js 3')
     return next(err);
   }
 });
