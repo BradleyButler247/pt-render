@@ -46,6 +46,7 @@ router.post("/token", async function (req, res, next) {
 
 router.post("/register", async function (req, res, next) {
   try {
+    console.log('routes/auth.js')
     const validator = jsonschema.validate(req.body.userInfo, userRegisterSchema);
     if (!validator.valid) {
       const errs = validator.errors.map(e => e.stack);
