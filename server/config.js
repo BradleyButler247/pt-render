@@ -12,8 +12,8 @@ const PORT = process.env.VITE_PORT || 3000;
 function getDatabaseUri() {
   return (process.env.NODE_ENV === "test")
     ? "postgres:///pt_render_test"
-    // : process.env.DATABASE_URL || "postgres:///pt_render?sslmode=disable";
-    : process.env.DATABASE_URL || "postgres:///pt_render";
+    : process.env.DATABASE_URL;
+    // : process.env.DATABASE_URL || "postgres:///pt_render";
 }
 
 const BCRYPT_WORK_FACTOR = process.env.NODE_ENV === "test" ? 1 : 12;
