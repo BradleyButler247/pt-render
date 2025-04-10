@@ -11,49 +11,49 @@ const RoutesList = ({ register, login, editUser, currUser, flashMsg, setFlashMsg
     return (
         <Routes>
             <Route exact={true} path="/Login" element={<Login 
-                                                            currUser={currUser} 
-                                                            login={login} 
-                                                            flashMsg={flashMsg} 
-                                                            setFlashMsg={setFlashMsg} 
+                                                            currUser={ currUser } 
+                                                            login={ login } 
+                                                            flashMsg={ flashMsg } 
+                                                            setFlashMsg={ setFlashMsg } 
                                                         />} />
 
             <Route exact={true} path="/Signup" element={<SignUp 
-                                                            register={register} 
-                                                            currUser={currUser} 
-                                                            flashMsg={flashMsg} 
-                                                            setFlashMsg={setFlashMsg} 
+                                                            register={ register } 
+                                                            currUser={ currUser } 
+                                                            flashMsg={ flashMsg } 
+                                                            setFlashMsg={setFlashMsg } 
                                                         />} />
 
             <Route exact={true} path="/User/:username" element={<Profile 
-                                                        editUser={editUser}
-                                                        currUser={currUser} 
-                                                        flashMsg={flashMsg} 
-                                                        setFlashMsg={setFlashMsg} 
-                                                        addTrade={addTrade}
-                                                        updateFavorite={updateFavorite}
+                                                        editUser={ editUser }
+                                                        currUser={ currUser } 
+                                                        flashMsg={ flashMsg } 
+                                                        setFlashMsg={ setFlashMsg } 
+                                                        addTrade={ addTrade }
+                                                        updateFavorite={ updateFavorite }
                                                     />} />
 
 
             <Route exact={true} path="/Crypto/Browse" element={<Browse 
-                                                                    currUser={currUser} 
-                                                                    categories={categories}
-                                                                    setCategories={setCategories}
-                                                                    updateFavorite={updateFavorite}
+                                                                    currUser={ currUser } 
+                                                                    categories={ categories }
+                                                                    setCategories={ setCategories }
+                                                                    updateFavorite={ updateFavorite }
                                                                 />} />
 
             <Route exact={true} path="/Crypto/Categories" element={<CategoriesBrowse
-                                                                        categories={categories}
-                                                                        setCategories={setCategories}
+                                                                        categories={ categories }
+                                                                        setCategories={ setCategories }
                                                                     />} />
 
             <Route exact={true} path="/Crypto/Categories/:ID" element={<CategoriesTokenList 
-                                                                            currUser={currUser} 
-                                                                            updateFavorite={updateFavorite}
+                                                                            currUser={ currUser } 
+                                                                            updateFavorite={ updateFavorite }
                                                                         />} />
 
             <Route exact={true} path="/Crypto/:ID" element={<AssetDetails
-                                                                setToken={setToken}
-                                                                token={token}
+                                                                setToken={ setToken }
+                                                                token={ token }
                                                             />} /> 
 
             <Route exact={ true } path="*" element={ 
