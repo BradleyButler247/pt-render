@@ -13,6 +13,7 @@ dotenv.config({ path: path.resolve(__dirname, '../.env') })
 
 const { PORT } = require('./config');
 const { SERVER_PORT } = require('./config');
+const { SERVER_ADDRESS } = require('./config');
 const { authenticateJWT } = require('./middleware/auth');
 const authRoutes = require('./routes/auth');
 const usersRoutes = require('./routes/users');
@@ -48,6 +49,5 @@ app.use((err, req, res, next) => {
 
 const server = app.listen(SERVER_PORT, () => {
   const port = server.address().port;
-  const address = server.address().address;
-  console.log(`Express is working on port ${ port } & address ${ address }`);
+  console.log(`Express is working on port ${ port }`);
 });

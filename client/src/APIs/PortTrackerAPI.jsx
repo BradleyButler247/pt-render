@@ -23,7 +23,6 @@ class PortTrackerAPI {
 //   // Individual API routes
 
   static async register(user) {
-    console.log(BASE_URL)
     const userInfo = user.info;
     const res = await this.request(`auth/register`, userInfo, 'post');
     PortTrackerAPI.token = res.token
