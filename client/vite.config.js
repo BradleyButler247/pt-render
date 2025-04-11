@@ -7,8 +7,8 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   const parentDir = path.resolve(__dirname, '../');
   dotenv.config({ path: path.join(parentDir, '.env') });
-  const clientAddress = process.env.VITE_PORT || '0.0.0.0:2020'
-  const serverAddress = process.env.VITE_SERVER_ADDRESS || '0.0.0.0:3030'
+  const clientAddress = process.env.VITE_PORT || '2000'
+  const serverAddress = process.env.VITE_SERVER_ADDRESS || '3000'
 
   return ({
     define: {
