@@ -7,6 +7,11 @@
     }
 }
 
+.trades-list.none {
+    font-size: large;
+    margin-bottom: 1rem;
+}
+
 .trades-list-table {
     display: block;
     min-width: fit-content;
